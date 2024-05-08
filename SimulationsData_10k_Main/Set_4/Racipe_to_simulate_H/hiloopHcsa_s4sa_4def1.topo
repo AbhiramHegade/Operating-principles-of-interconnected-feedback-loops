@@ -1,0 +1,10 @@
+Source	Target	Type
+Grhl	ZEB	2
+miR-145	ZEB	2
+miR-200	ZEB	2
+Ovol	ZEB	2
+ZEB	ZEB	1
+Ovol	Ovol	1
+miR-145	miR-145	1
+miR-200	miR-200	1
+Grhl	Grhl	1

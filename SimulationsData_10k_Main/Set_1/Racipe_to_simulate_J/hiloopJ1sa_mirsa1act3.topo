@@ -1,0 +1,9 @@
+Source	Target	Type
+miR-200b	ZEB1	2
+ZEB1	miR-200b	2
+miR-200b	ZEB2	2
+ZEB2	miR-200b	2
+A	ZEB1	1
+ZEB1	A	2
+ZEB1	ZEB1	1
+miR-200b	miR-200b	1
