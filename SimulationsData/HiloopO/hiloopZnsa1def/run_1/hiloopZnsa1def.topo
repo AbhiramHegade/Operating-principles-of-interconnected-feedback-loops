@@ -1,8 +1,0 @@
-Source	Target	Type
-miR-34a	ZEB1	2
-miR-141	ZEB1	2
-ZEB1	miR-141	2
-miR-200c	ZEB1	2
-ZEB1	miR-200c	2
-miR-34a	A	2
-A	miR-34a	2
