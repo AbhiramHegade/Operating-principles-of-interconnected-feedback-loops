@@ -1,6 +1,7 @@
 Name Changes in simulation data as compared to the article
 
 The simulation data files have different nameing for the network topologies and nodes of the network, and they are as follows: 
+	** you might notice there is "(with center)" in some names it means the central node is Self Activated in that network.
 Name As in RACIPE simulation data    ==    Name As in Article
 -------------------------------------------------------------
 hiloopG_1mir_sa	  == 	H4 2SA (with center)
