@@ -143,7 +143,6 @@ hilooppent_2sa	  == 	TP 2SA
 hilooppent_3sa	  == 	TP 3SA 
 hilooppent_4sa	  == 	TP 4SA 
 hilooppent_5sa	  == 	TP All SA 
-	  == 	
 ToggleQuad0sa1act	  == 	TS WT 1ESR
 ToggleQuad0sa1def	  == 	TS WT 1ED
 ToggleQuad0sa2def	  == 	TS WT 2ED
