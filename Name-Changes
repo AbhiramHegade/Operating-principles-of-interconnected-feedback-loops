@@ -41,8 +41,8 @@ hiloopHcsa_s0sa_2def1	  == 	H5 1SA 2ED (with center)
 hiloopHcsa_s0sa_3def1	  == 	H5 1SA 3ED (with center)
 hiloopHcsa_s0sa_4def1	  == 	H5 1SA 4ED (with center)
 hiloopHcsa_s0saact1	  == 	H5 1SA 1ESR (with center)
-hiloopHcsa_s0saact2	  == 	H5 1SA act2 (with center)
-hiloopHcsa_s0sadef1	  == 	H5 1SA def1 (with center)
+hiloopHcsa_s0saact2	  == 	H5 1SA 1ESR P2 (with center)
+hiloopHcsa_s0sadef1	  == 	H5 1SA 1WD P1 (with center)
 hiloopHcsa_s1sa	  == 	H5 2SA (with center)
 hiloopHcsa_s2sa	  == 	H5 3SA (with center)
 hiloopHcsa_s3sa	  == 	H5 4SA (with center)
@@ -110,8 +110,8 @@ hiloopJallsa2def1	  == 	S4 All SA 2ED1
 hiloopJnsa	  == 	S4 WT 
 ToggleQuad0sa	  == 	TS WT 
 ToggleQuad1sa	  == 	TS 1SA
-ToggleQuad2sa	  == 	TS2SA 
-ToggleQuad3sa	  == 	TS3SA 
+ToggleQuad2sa	  == 	TS 2SA 
+ToggleQuad3sa	  == 	TS 3SA 
 ToggleQuad4sa	  == 	TS All SA 
 ToggleTriad0sa	  == 	TT WT 
 ToggleTriad1sa	  == 	TT 1SA
@@ -124,10 +124,10 @@ ToggleW3sa	  == 	S5 3SA
 ToggleW4sa	  == 	S5 4SA 
 ToggleW5sa	  == 	S5 All SA 
 hiloopXcnsa_s1sa	  == 	hiloopX 1SA
-hiloopXcsa_s0sa	  == 	hiloopX 1SA (with center)
-hiloopXcsa_s1sa	  == 	hiloopX 2SA (with center)
-hiloopXcsa_s5sa	  == 	hiloopX All SA
-hiloopXnsa	  == 	hiloopX WT 
+hiloopXcsa_s0sa	  == 	hiloopX 1SA (with center)  (unused)
+hiloopXcsa_s1sa	  == 	hiloopX 2SA (with center)  (unused)
+hiloopXcsa_s5sa	  == 	hiloopX All SA  (unused)
+hiloopXnsa	  == 	hiloopX WT  (unused)
 hiloopZ_1mir_sa	  == 	SH5 2SA (with center)
 hiloopZ_2mir_sa	  == 	SH5 3SA (with center)
 hiloopZ_3mir_sa	  == 	SH5 4SA (with center)
