@@ -46,12 +46,12 @@ hiloopHcsa_s0sadef1	  == 	H5 1SA def1 (with center)
 hiloopHcsa_s1sa	  == 	H5 2SA (with center)
 hiloopHcsa_s2sa	  == 	H5 3SA (with center)
 hiloopHcsa_s3sa	  == 	H5 4SA (with center)
-hiloopHcsa_hiloopJsa	  == 	H5 All SA 
-hiloopHcsa_hiloopJsa_2def1	  == 	H5 All SA 2ED
-hiloopHcsa_hiloopJsa_3def1	  == 	H5 All SA 3ED
-hiloopHcsa_hiloopJsa_4def1	  == 	H5 All SA 4ED
-hiloopHcsa_hiloopJsaact1	  == 	H5 All SA 1ESR
-hiloopHcsa_hiloopJsadef1	  == 	H5 All SA 1ED
+hiloopHcsa_s4sa	  == 	H5 All SA 
+hiloopHcsa_s4sa_2def1	  == 	H5 All SA 2ED
+hiloopHcsa_s4sa_3def1	  == 	H5 All SA 3ED
+hiloopHcsa_s4sa_4def1	  == 	H5 All SA 4ED
+hiloopHcsa_s4saact1	  == 	H5 All SA 1ESR
+hiloopHcsa_s4sadef1	  == 	H5 All SA 1ED
 hiloopHnsa	  == 	H5 WT 
 hiloopHnsa2def1	  == 	H5 WT 2ED
 hiloopHnsa_3def1	  == 	H5 WT 3ED
