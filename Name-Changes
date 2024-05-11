@@ -21,10 +21,9 @@ The simulation data files have different naming for the network topologies and n
 Example: 1. "hiloopI_all_sa2def1	  == 	S3 All SA 2ED C1" 	-- S3 network (serial network with 3 nodes) with all nodes self-activated and with 2 edges are deleted in the network with combination 1.
 	 2. "hiloopHnsaact1	  == 	H5 WT 1ESR P1"  	-- H5 network (serial network with 3 nodes) with no nodes being self-activated and with 1 edge sign reversal in the network at position 1.
  
-
-** you might notice there is "(with center)" in some names it means the central node is Self Activated in that network.
-Name As in RACIPE simulation data    ==    Name As in Article.
--------------------------------------------------------------
+---------------------------------------------------------------
+Name as in RACIPE simulation data    ==    Name as in Article.
+---------------------------------------------------------------
 hiloopG_1mir_sa	  == 	H4 2SA (with center)
 hiloopG_2mir_sa	  == 	H4 3SA (with center)
 hiloopG_3mir_sa	  == 	H4 All SA
