@@ -1,9 +1,29 @@
 Name Changes in simulation data as compared to the article
-
-The simulation data files have different nameing for the network topologies and nodes of the network, and they are as follows: 
-	** you might notice there is "(with center)" in some names it means the central node is Self Activated in that network.
-Name As in RACIPE simulation data    ==    Name As in Article
--------------------------------------------------------------
+The simulation data files have different naming for the network topologies and nodes of the network. The logic in naming system used in the article is as follows:
+(1) The first part (2 or 3 letters) stands for the type of network:
+	- "S3" is a Serial network with 3 nodes
+	- "S4" is a Serial network with 4 nodes
+	- "S5" is a Serial network with 5 nodes
+	- "H4" is Hub type network with 4 nodes
+	- "H5" is Hub type network with 5 nodes
+	- "TT" is a Toggle Triad network with 3 nodes
+	- "TS" is a Toggle Square network with 4 nodes
+	- "TP" is a Toggle Pentagon network with 5 nodes
+(2) The next 2 or 3 letters or "All SA" represent the number of nodes self-activated (SA) in the network, for example:
+ 	- "WT" no node is self-activated.
+	- "1SA" a single node being self-activated.
+	- "All SA" all nodes in the network being self-activated.
+(3) The next letters represent the number of edge perturbations in the network and their position, for example:
+	- "1ESR P1" means 1 Edge sign reversal at position 1 in the respective network.
+	- "1ED P2" means 1 Edge deletion at position 2 in the respective network.
+	- "2ED C1" means two Edge deletions in combination 1 in the respective network.
+(4) The words in braces are present for only indication i.e. (With center) means the self activation is at the central node of the network. 
+Example: 1. "hiloopI_all_sa2def1	  == 	S3 All SA 2ED C1" 	-- S3 network (serial network with 3 nodes) with all nodes self-activated and with 2 edges are deleted in the network with combination 1.
+	 2. "hiloopHnsaact1	  == 	H5 WT 1ESR P1"  	-- H5 network (serial network with 3 nodes) with no nodes being self-activated and with 1 edge sign reversal in the network at position 1.
+ 
+---------------------------------------------------------------
+Name as in RACIPE simulation data    ==    Name as in Article.
+---------------------------------------------------------------
 hiloopG_1mir_sa	  == 	H4 2SA (with center)
 hiloopG_2mir_sa	  == 	H4 3SA (with center)
 hiloopG_3mir_sa	  == 	H4 All SA
@@ -12,18 +32,18 @@ hiloopG_3mir_sa_3def1	  == 	H4 All SA 3ED
 hiloopG_3mir_saact1	  == 	H4 All SA 1ESR
 hiloopG_3mir_sadef1	  == 	H4 All SA 1ED
 hiloopGnsa	  == 	H4 WT
-hiloopGnsa2def1	  == 	H4 WT 2ED1
+hiloopGnsa2def1	  == 	H4 WT 2ED
 hiloopGnsa_1mirsa	  == 	H4 1SA
 hiloopGnsa_2mirsa	  == 	H4 2SA 
 hiloopGnsa_3def1	  == 	H4 WT 3ED
 hiloopGnsa_3mirsa	  == 	H4 3SA 
-hiloopGnsaact1	  == 	H4 WT 1ESR
-hiloopGnsadef1	  == 	H4 WT 1ED
+hiloopGnsaact1	  == 	H4 WT 1ESR P1
+hiloopGnsadef1	  == 	H4 WT 1ED P1
 hiloopGsa	  == 	H4 1SA (with center)
 hiloopGsa2def1	  == 	H4 1SA 2ED (with center)
 hiloopGsa_3def1	  == 	H4 1SA 3ED (with center)
-hiloopGsaact1	  == 	H4 1SA 1ESR (with center)
-hiloopGsadef1	  == 	H4 1SA 1ED (with center)
+hiloopGsaact1	  == 	H4 1SA 1ESR P1 (with center)
+hiloopGsadef1	  == 	H4 1SA 1ED  P1 (with center)
 hiloopHcnsa_s1sa	  == 	H5 1SA 
 hiloopHcnsa_s1saact1	  == 	H5 1SA 1ESR P1
 hiloopHcnsa_s1saact2	  == 	H5 1SA 1ESR P2
@@ -35,14 +55,14 @@ hiloopHcnsa_s1sadef3	  == 	H5 1SA 1ED P3
 hiloopHcnsa_s1sadef4	  == 	H5 1SA 1ED P4
 hiloopHcnsa_s2sa	  == 	H5 2SA
 hiloopHcnsa_s3sa	  == 	H5 3SA
-hiloopHcnsa_hiloopJsa	  == 	H5 4SA 
+hiloopHcnsa_s4sa	  == 	H5 4SA 
 hiloopHcsa_s0sa	  == 	H5 1SA (with center)
 hiloopHcsa_s0sa_2def1	  == 	H5 1SA 2ED (with center)
 hiloopHcsa_s0sa_3def1	  == 	H5 1SA 3ED (with center)
 hiloopHcsa_s0sa_4def1	  == 	H5 1SA 4ED (with center)
-hiloopHcsa_s0saact1	  == 	H5 1SA 1ESR (with center)
+hiloopHcsa_s0saact1	  == 	H5 1SA 1ESR P1 (with center)
 hiloopHcsa_s0saact2	  == 	H5 1SA 1ESR P2 (with center)
-hiloopHcsa_s0sadef1	  == 	H5 1SA 1WD P1 (with center)
+hiloopHcsa_s0sadef1	  == 	H5 1SA 1ED P1 (with center)
 hiloopHcsa_s1sa	  == 	H5 2SA (with center)
 hiloopHcsa_s2sa	  == 	H5 3SA (with center)
 hiloopHcsa_s3sa	  == 	H5 4SA (with center)
@@ -56,18 +76,18 @@ hiloopHnsa	  == 	H5 WT
 hiloopHnsa2def1	  == 	H5 WT 2ED
 hiloopHnsa_3def1	  == 	H5 WT 3ED
 hiloopHnsa_4def1	  == 	H5 WT 4ED
-hiloopHnsaact1	  == 	H5 WT 1ESR
-hiloopHnsadef1	  == 	H5 WT 1ED
+hiloopHnsaact1	  == 	H5 WT 1ESR P1
+hiloopHnsadef1	  == 	H5 WT 1ED P1
 hiloopI1sa	  == 	S3 1SA 
-hiloopI1sa2def1	  == 	S3 1SA 2ED1
-hiloopI1sa2def2	  == 	S3 1SA 2ED2
-hiloopI1sa2def3	  == 	S3 1SA 2ED3
-hiloopI1sa2def4	  == 	S3 1SA 2ED4
+hiloopI1sa2def1	  == 	S3 1SA 2ED C1 
+hiloopI1sa2def2	  == 	S3 1SA 2ED C2 
+hiloopI1sa2def3	  == 	S3 1SA 2ED C3 
+hiloopI1sa2def4	  == 	S3 1SA 2ED C4 
 hiloopI1sa_mirsa	  == 	S3 2SA (with center)
-hiloopI1sa_mirsa2def1	  == 	S3 2SA 2ED P1 (with center)
+hiloopI1sa_mirsa2def1	  == 	S3 2SA 2ED C1 (with center)  
 hiloopI1sa_mirsaact1	  == 	S3 2SA 1ESR (with center)
 hiloopI1sa_mirsadef1	  == 	S3 2SA 1ED P1 (with center)
-hiloopI1saact1	  == 	S3 1SA 1ESR
+hiloopI1saact1	  == 	S3 1SA 1ESR P1
 hiloopI1saact2	  == 	S3 1SA 1ESR P2
 hiloopI1saact3	  == 	S3 1SA 1ESR P3
 hiloopI1saact4	  == 	S3 1SA 1ESR P4
@@ -76,37 +96,37 @@ hiloopI1sadef2	  == 	S3 1SA 1ED P2
 hiloopI1sadef3	  == 	S3 1SA 1ED P3
 hiloopI1sadef4	  == 	S3 1SA 1ED P4
 hiloopI_all_sa	  == 	S3 All SA 
-hiloopI_all_sa2def1	  == 	S3 All SA 2ED1
-hiloopI_all_sa2def2	  == 	S3 All SA 2ED2
-hiloopI_all_sa2def3	  == 	S3 All SA 2ED3
-hiloopI_all_saact1	  == 	S3 All SA 1ESR
+hiloopI_all_sa2def1	  == 	S3 All SA 2ED C1 
+hiloopI_all_sa2def2	  == 	S3 All SA 2ED C2 
+hiloopI_all_sa2def3	  == 	S3 All SA 2ED C3 
+hiloopI_all_saact1	  == 	S3 All SA 1ESR P1
 hiloopI_all_saact2	  == 	S3 All SA 1ESR P2
 hiloopI_all_sadef1	  == 	S3 All SA 1ED P1
 hiloopI_all_sadef2	  == 	S3 All SA 1ED P2
-hiloopInsa	  == 	S3 WT 
-hiloopInsa2def1	  == 	S3 WT 2ED1
-hiloopInsa2def2	  == 	S3 WT 2ED2
-hiloopInsa2def3	  == 	S3 WT 2ED3
-hiloopInsa_mirsa	  == 	S3 WT 1SA
-hiloopInsa_mirsa2def1	  == 	S3 WT 1SA 2ED1
-hiloopInsa_mirsaact1	  == 	S3 WT 1SA 1ESR
-hiloopInsa_mirsadef1	  == 	S3 WT 1SA 1ED
+hiloopInsa	  == 	S3 WT
+hiloopInsa2def1	  == 	S3 WT 2ED C1 
+hiloopInsa2def2	  == 	S3 WT 2ED C2 
+hiloopInsa2def3	  == 	S3 WT 2ED C3 
+hiloopInsa_mirsa	  == 	S3 1SA (with center)
+hiloopInsa_mirsa2def1	  == 	S3 1SA 2ED C1  (with center) 
+hiloopInsa_mirsaact1	  == 	S3 1SA 1ESR P1  (with center)
+hiloopInsa_mirsadef1	  == 	S3 1SA 1ED P1  (with center)
 hiloopInsaact1	  == 	S3 WT 1ESR P1
 hiloopInsaact2	  == 	S3 WT 1ESR P2
 hiloopInsadef1	  == 	S3 WT 1ED P1
 hiloopInsadef2	  == 	S3 WT 1ED P2
 hiloopIsa	  == 	S3 2SA
-hiloopIsa2def1	  == 	S3 2SA 2ED
+hiloopIsa2def1	  == 	S3 2SA 2ED C1 
 hiloopIsaact1	  == 	S3 2SA 1ESR
-hiloopIsadef1	  == 	S3 2SA 
+hiloopIsadef1	  == 	S3 2SA 1ED P1
 hiloopJ1sa1	  == 	S4 1SA
 hiloopJ1sa_mirsa1	  == 	S4 2SA
 hiloopJ_3sa1	  == 	S4 3SA
 hiloopJ_all_sa	  == 	S4 All SA 
-hiloopJ_all_sa3def1	  == 	S4 All SA 3ED1
+hiloopJ_all_sa3def1	  == 	S4 All SA 3ED
 hiloopJ_all_saact1	  == 	S4 All SA 1ESR
 hiloopJ_all_sadef4	  == 	S4 All SA 1ED
-hiloopJallsa2def1	  == 	S4 All SA 2ED1
+hiloopJallsa2def1	  == 	S4 All SA 2ED
 hiloopJnsa	  == 	S4 WT 
 ToggleQuad0sa	  == 	TS WT 
 ToggleQuad1sa	  == 	TS 1SA
@@ -124,25 +144,26 @@ ToggleW3sa	  == 	S5 3SA
 ToggleW4sa	  == 	S5 4SA 
 ToggleW5sa	  == 	S5 All SA 
 hiloopXcnsa_s1sa	  == 	hiloopX 1SA
-hiloopXcsa_s0sa	  == 	hiloopX 1SA (with center)  (unused)
-hiloopXcsa_s1sa	  == 	hiloopX 2SA (with center)  (unused)
-hiloopXcsa_s5sa	  == 	hiloopX All SA  (unused)
-hiloopXnsa	  == 	hiloopX WT  (unused)
+hiloopXcsa_s0sa	  == 	hiloopX 1SA (with center)
+hiloopXcsa_s1sa	  == 	hiloopX 2SA (with center)
+hiloopXcsa_s5sa	  == 	hiloopX All SA
+hiloopXnsa	  == 	hiloopX WT 
 hiloopZ_1mir_sa	  == 	SH5 2SA (with center)
 hiloopZ_2mir_sa	  == 	SH5 3SA (with center)
 hiloopZ_3mir_sa	  == 	SH5 4SA (with center)
 hiloopZ_allsa	  == 	SH5 All SA
 hiloopZnsa	  == 	SH5 WT 
-hiloopZnsa_1mirsa	  == 	SH5 WT 1SA 
-hiloopZnsa_2mirsa	  == 	SH5 WT 2SA 
-hiloopZnsa_3mirsa	  == 	SH5 WT 3SA 
-hiloopZsa	  == 	SH5 WT 1SA (at center)
+hiloopZnsa_1mirsa	  == 	SH5 1SA 
+hiloopZnsa_2mirsa	  == 	SH5 2SA 
+hiloopZnsa_3mirsa	  == 	SH5 3SA 
+hiloopZsa	  == 	SH5 1SA (at center)
 hilooppent_0sa	  == 	TP WT 
 hilooppent_1sa	  == 	TP 1SA 
 hilooppent_2sa	  == 	TP 2SA 
 hilooppent_3sa	  == 	TP 3SA 
 hilooppent_4sa	  == 	TP 4SA 
 hilooppent_5sa	  == 	TP All SA 
+	  == 	
 ToggleQuad0sa1act	  == 	TS WT 1ESR
 ToggleQuad0sa1def	  == 	TS WT 1ED
 ToggleQuad0sa2def	  == 	TS WT 2ED
