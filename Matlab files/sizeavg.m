@@ -1,7 +1,7 @@
 clc;
 clear all;
 
-filelist = dir(fullfile('/Users/abhiramhegade/Desktop/extra', '**', '*run_1')); 
+filelist = dir(fullfile('/Users/abhiramhegade/Desktop/E', '**', '*run_1')); 
 %MeanPercent=zeros(size(filelist,1),7)
 for i = 1:numel(filelist)
 
